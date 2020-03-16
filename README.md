@@ -38,7 +38,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## Related course
 
-[VueMastery - Build a Trello Clone](https://www.vuemastery.com/courses/watch-us-build-trello-clone)
+[VueMastery - Token-Based Authentication](https://www.vuemastery.com/courses/token-based-authentication/user-registration)
 
 ### Stay in touch
 
@@ -47,4 +47,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## License
 
-Vue Trello is [MIT licensed](LICENSE).
+Vue Auth is [MIT licensed](LICENSE).
