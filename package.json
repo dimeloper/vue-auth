@@ -5,8 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "run-s lint:all:*",
     "start:dev": "node server.js & vue-cli-service serve",
+    "lint": "run-s lint:all:*",
     "lint:eslint": "eslint --fix",
     "lint:stylelint": "stylelint --fix",
     "lint:prettier": "prettier --write --loglevel warn",
