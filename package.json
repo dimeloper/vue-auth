@@ -5,15 +5,14 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
+    "lint": "run-s lint:all:*",
     "start:dev": "node server.js & vue-cli-service serve",
     "lint:eslint": "eslint --fix",
     "lint:stylelint": "stylelint --fix",
     "lint:prettier": "prettier --write --loglevel warn",
     "lint:all:eslint": "yarn lint:eslint --ext .js,.vue .",
     "lint:all:stylelint": "yarn lint:stylelint \"src/**/*.{vue,scss}\"",
-    "lint:all:prettier": "yarn lint:prettier \"**/*.{js,json,css,scss,vue,html,md}\"",
-    "lint": "run-s lint:all:*"
+    "lint:all:prettier": "yarn lint:prettier \"**/*.{js,json,css,scss,vue,html,md}\""
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -44,11 +43,11 @@
     "husky": "^4.2.3",
     "imagemin-lint-staged": "^0.4.0",
     "lint-staged": "^10.0.8",
-    "npm-run-all": "^4.1.5",
     "node-sass": "^4.11.0",
+    "npm-run-all": "^4.1.5",
     "prettier": "^1.19.1",
-    "stylelint": "^13.2.1",
     "sass-loader": "^7.1.0",
+    "stylelint": "^13.2.1",
     "stylelint-config-css-modules": "^2.2.0",
     "stylelint-config-prettier": "^8.0.1",
     "stylelint-config-recess-order": "^2.0.3",
