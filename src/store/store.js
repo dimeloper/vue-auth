@@ -4,9 +4,22 @@ import axios from 'axios';
 
 Vue.use(Vuex);
 
+const user = JSON.parse(localStorage.getItem('user')) || null;
+
 export default new Vuex.Store({
-  state: {},
+  state: {
+    user,
+  },
+  getters: {
+    loggedIn(state) {
+      return !!state.user;
+    },
+  },
   mutations: {
+    CLEAR_USER_DATA() {
+      localStorage.removeItem('user');
+      location.reload();
+    },
     SET_USER_DATA(state, userData) {
       state.user = userData;
       localStorage.setItem('user', JSON.stringify(userData));
@@ -22,6 +35,9 @@ export default new Vuex.Store({
         .then(({data}) => {
           commit('SET_USER_DATA', data);
         });
+    },
+    logout({commit}) {
+      commit('CLEAR_USER_DATA');
     },
     register({commit}, credentials) {
       return axios
