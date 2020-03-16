@@ -54,5 +54,10 @@
     "stylelint-config-standard": "^20.0.0",
     "stylelint-scss": "^3.14.2",
     "vue-template-compiler": "^2.5.21"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "cross-env PRE_COMMIT=true lint-staged"
+    }
   }
 }
