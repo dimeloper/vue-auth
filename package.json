@@ -15,7 +15,7 @@
     "lint:all:prettier": "yarn lint:prettier \"**/*.{js,json,css,scss,vue,html,md}\""
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
     "eslint-config-standard": "^12.0.0",
